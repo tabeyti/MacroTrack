@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+	android:background="@drawable/shadow"
+    >
+
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+    	android:layout_height="fill_parent"
+    	android:padding="5dp"
+        >
+	    <TextView
+	    	android:id="@+id/dayentry_food"
+	    	android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:textSize="18sp"
+			android:padding="5dp"
+			/>
+	    <View
+    		android:layout_width="1dp"
+    		android:layout_height="match_parent"
+    		android:background="#d0caff" 
+    		android:padding="5dp"
+    		/>
+	    <TextView
+	    	android:id="@+id/dayentry_rowfoodquantity"
+	    	android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:textSize="18sp"
+			android:padding="5dp"
+			/>
+    </LinearLayout>
+    
+    <View
+    	android:layout_height="1dp"
+    	android:layout_width="match_parent"
+    	android:background="#d0caff" />
+    
+    <TableLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="3dp" 
+        android:stretchColumns="*">
+        <TableRow
+            android:id="@+id/dayentry_fooddetails"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content">
+            <LinearLayout 
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                >
+                <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:textSize="12sp"
+			        android:text="CAL: "/>
+			    <TextView
+			        android:id="@+id/dayentry_calories"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:textSize="12sp"/>
+			</LinearLayout>
+			<LinearLayout 
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                >
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:textSize="12sp"
+			        android:text="PROT: "/>
+			    <TextView
+			        android:id="@+id/dayentry_protein"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:textSize="12sp"	/>
+			 </LinearLayout> 
+			 <LinearLayout 
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                >   
+                <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:textSize="12sp"
+			        android:text="CRB: "/>
+			    <TextView
+			        android:id="@+id/dayentry_carbohydrates"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:textSize="12sp"/>
+			</LinearLayout>
+			<LinearLayout 
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                >
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:textSize="12sp"
+			        android:text="FAT: "/>
+			    <TextView
+			        android:id="@+id/dayentry_fat"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:textSize="12sp"/>
+			 </LinearLayout>
+		</TableRow>
+	</TableLayout>
+
+</LinearLayout>

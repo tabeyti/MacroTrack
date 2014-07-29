@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <CheckBox
+        android:id="@+id/dayentrydialog_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom"
+        />
+    <Spinner
+        android:id="@+id/dayentrydialog_foodlist" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <EditText 
+        android:id="@+id/dayentrydialog_foodname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Food Name"
+        android:textSize="12sp"
+        />
+    <EditText 
+        android:id="@+id/dayentrydialog_units"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="numberDecimal"
+        android:hint="@string/units"
+        android:textSize="12sp"
+        />
+      <EditText 
+        android:id="@+id/dayentrydialog_unit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="text"
+        android:hint="@string/unit"
+        android:textSize="12sp"
+        />
+
+</LinearLayout>

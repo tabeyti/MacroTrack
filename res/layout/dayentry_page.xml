@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#d0caff"
+    >
+           
+    <include  layout="@layout/dayentry_datebar" 
+        android:id="@+id/datebar"
+        />
+    
+
+	<ListView
+	    android:id="@+id/dayentry_maintable"
+		android:layout_width="fill_parent"	
+		android:layout_height="0dp"	
+		android:longClickable="true"
+		android:layout_weight="1"
+		android:padding="5dp"
+		android:divider="#d0caff"
+		android:dividerHeight="5dp"
+		/>		    
+		
+		
+	<include  
+	    layout="@layout/dayentry_summarybar" 
+	    android:id="@+id/summarybar"
+	    android:layout_gravity="bottom"
+	    android:layout_weight=".2"
+	    />
+	
+
+</LinearLayout>
